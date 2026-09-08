@@ -17,7 +17,7 @@ terraform {
         bucket = "avinash-s3-remotebackend-08092026"
         region = "ap-south-2"
         profile = "dev"
-        share_credentials_files = ["/root/.aws/credentials"]
+        shared_credentials_files = ["/root/.aws/credentials"]
         key = "terraform.tfstate"
         use_lockfile = true
     }

@@ -1,5 +1,5 @@
 resource "aws_s3_bucket" "s3" {
-    bucket_name = "avinash-s3-remotebackend-08092026"
+    bucket = "avinash-s3-remotebackend-08092026"
     tags = {
         Name = "avinash-s3-remotebackend-08092026"
     }
@@ -12,5 +12,4 @@ resource "aws_instance" "public_ec2" {
     tags = {
         Name = "public-ec2"
     }
-    depends_on = [aws_s3_bucket.s3]
 }
